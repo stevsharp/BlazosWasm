@@ -1,0 +1,21 @@
+{
+  "name": "Blazor WebAssembly Boilerplate",
+  "short_name": "Blazor WebAssembly Boilerplate",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3eaf7c",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "full-stack-hero-logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "full-stack-hero-logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}

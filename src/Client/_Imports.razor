@@ -1,0 +1,42 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.AspNetCore.Components.WebAssembly.Http
+@using Microsoft.AspNetCore.WebUtilities
+@using Microsoft.Extensions.Configuration
+@using Microsoft.Extensions.DependencyInjection
+@using Microsoft.Extensions.Localization
+@using Microsoft.JSInterop
+@using FSH.BlazorWebAssembly.Client
+@using FSH.BlazorWebAssembly.Client.Shared
+@using FSH.BlazorWebAssembly.Client.Pages.Authentication
+@using FSH.BlazorWebAssembly.Client.Pages.Multitenancy
+@using FSH.BlazorWebAssembly.Client.Components.Common
+@using FSH.BlazorWebAssembly.Client.Components.EntityTable
+@using FSH.BlazorWebAssembly.Client.Components.Localization
+@using FSH.BlazorWebAssembly.Client.Components.Notifications
+@using FSH.BlazorWebAssembly.Client.Components.ThemeManager
+@using FSH.BlazorWebAssembly.Client.Infrastructure.ApiClient
+@using FSH.BlazorWebAssembly.Client.Infrastructure.Auth
+@using FSH.BlazorWebAssembly.Client.Infrastructure.Common
+@using FSH.BlazorWebAssembly.Client.Infrastructure.Notifications
+@using FSH.BlazorWebAssembly.Client.Infrastructure.Preferences
+@using FSH.WebApi.Shared.Authorization
+@using Blazored.LocalStorage
+@using Mapster
+@using MediatR.Courier
+@using MudBlazor
+
+@attribute [Authorize]
+
+@inject NavigationManager Navigation
+@inject ISnackbar Snackbar
+@inject IDialogService DialogService
+@inject IConfiguration Config
+@inject IClientPreferenceManager ClientPreferences
